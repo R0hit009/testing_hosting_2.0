@@ -1,3 +1,4 @@
+streamlit==1.38.0
 absl-py==2.1.0
 altair
 astunparse==1.6.3
@@ -54,7 +55,6 @@ rpds-py==0.20.0
 rsa==4.9
 six==1.16.0
 smmap==5.0.1
-streamlit==1.38.0
 tenacity==8.5.0
 tensorboard==2.13.0
 tensorboard-data-server==0.7.2
