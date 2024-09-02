@@ -1,4 +1,5 @@
-streamlit==1.17.0
+streamlit==1.38.0
+setuptools
 absl-py==2.1.0
 altair
 astunparse==1.6.3
