@@ -2,7 +2,7 @@ import streamlit as st
 import cv2
 import numpy as np
 import numpy as np
-from keras.models import model_from_json
+from keras.models import load_model
 
 
 
@@ -12,14 +12,8 @@ st.write("This application captures images from your webcam.")
 #loading model from disk
 emotion_dict = {0: "Angry", 1: "Disgusted", 2: "Fearful", 3: "Happy", 4: "Neutral", 5: "Sad", 6: "Surprised"}
 
-# load json and create model
-json_file = open('emotion_model.json', 'r')
-loaded_model_json = json_file.read()
-json_file.close()
-emotion_model = model_from_json(loaded_model_json)
-
 # load weights into new model
-emotion_model.load_weights("emotion_model.h5")
+emotion_model = load_model("emotion_model.keras")
 print("Loaded model from disk")
 
 run = st.checkbox('Run')
